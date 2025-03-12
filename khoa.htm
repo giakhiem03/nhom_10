@@ -1,14 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>Họ tên: Nguyễn Đăng Khoa</h1>
-        <h1>Cao: 1m7</h1>
-        <h1>Lớp: 21DTHD5</h1>
-        <h1>MSSV: 2180605979</h1>
-    </body>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới Thiệu Bản Thân</title>
+    <style>
+      /* Định dạng chung */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #141e30, #243b55);
+        color: white;
+        text-align: center;
+      }
+
+      /* Container chính */
+      .container {
+        width: 40%;
+        margin: 50px auto;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+      }
+
+      /* Ảnh đại diện */
+      .avatar {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #00aaff;
+      }
+
+      /* Tiêu đề */
+      h1 {
+        margin: 10px 0;
+        font-size: 28px;
+      }
+
+      /* Danh sách thông tin */
+      .info,
+      .skills {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      .info li,
+      .skills li {
+        font-size: 18px;
+        background: rgba(255, 255, 255, 0.2);
+        margin: 8px 0;
+        padding: 10px;
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+
+      .info li:hover,
+      .skills li:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: scale(1.05);
+      }
+
+      /* Nút liên hệ */
+      .contact-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 25px;
+        font-size: 16px;
+        color: white;
+        background: #00aaff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .contact-btn:hover {
+        background: #0088cc;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="3.jpg" alt="Ảnh đại diện" class="avatar" />
+      <h1>Trang Đăng Khoa</h1>
+      <p>
+        Chào mừng đến với trang web của tôi! Tôi là một lập trình viên đam mê
+        phát triển web và công nghệ.
+      </p>
+
+      <h2>Thông Tin Cá Nhân</h2>
+      <ul class="info">
+        <li>📛 <strong>Họ tên:</strong> Trang Đăng Khoa</li>
+        <li>📏 <strong>Chiều cao:</strong> 1m8</li>
+        <li>🏫 <strong>Lớp:</strong> 21DTHD5</li>
+        <li>🆔 <strong>MSSV:</strong> 2180607212</li>
+        <li>💻 <strong>Ngành:</strong> Công nghệ thông tin</li>
+      </ul>
+
+      <h2>Kỹ Năng Lập Trình</h2>
+      <ul class="skills">
+        <li>🔥 HTML - Thành thạo</li>
+        <li>🎨 CSS - Thiết kế giao diện đẹp</li>
+        <li>⚡ JavaScript - Tạo hiệu ứng động</li>
+        <li>🌍 Git - Quản lý mã nguồn</li>
+        <li>🚀 ReactJS - Xây dựng web hiện đại</li>
+      </ul>
+
+      <a href="mailto:khoa@example.com" class="contact-btn">📩 Liên hệ</a>
+    </div>
+  </body>
 </html>
