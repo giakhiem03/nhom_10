@@ -1,14 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Giới Thiệu Bản Thân - Noel Edition 🎄</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: linear-gradient(
+                    135deg,
+                    #ff4e50,
+                    #f9d423
+                ); /* Màu đỏ + vàng ánh nắng */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                overflow: hidden;
+            }
+            .container {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                max-width: 400px;
+                width: 100%;
+                position: relative;
+            }
+            .avatar {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid #28a745;
+                margin-bottom: 15px;
+            }
+            h1 {
+                color: #333;
+                font-size: 22px;
+                margin: 10px 0;
+            }
+            .title {
+                font-size: 24px;
+                font-weight: bold;
+                color: #28a745; /* Xanh lá cây */
+                margin-bottom: 10px;
+            }
+            .description {
+                font-size: 16px;
+                color: #555;
+                margin-bottom: 15px;
+            }
+            .contact-btn {
+                display: inline-block;
+                padding: 10px 15px;
+                background: #28a745;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+            .social-icons {
+                margin-top: 15px;
+            }
+            .social-icons a {
+                text-decoration: none;
+                color: #28a745;
+                font-size: 24px;
+                margin: 0 10px;
+            }
+
+            /* Hiệu ứng tuyết rơi */
+            .snow {
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background: white;
+                border-radius: 50%;
+                opacity: 0.8;
+                animation: snowfall linear infinite;
+            }
+
+            @keyframes snowfall {
+                0% {
+                    transform: translateY(0);
+                }
+                100% {
+                    transform: translateY(100vh);
+                }
+            }
+        </style>
     </head>
     <body>
-        <h1>Họ tên: Lê Quang Hiến</h1>
-        <h1>Cao: 1m7</h1>
-        <h1>Lớp: 21DTHD5</h1>
-        <h1>MSSV: 2180605979</h1>
+        <div class="container">
+            <img src="hien.jpg" alt="Ảnh đại diện" class="avatar" />
+            <div class="title">🎄 Giới Thiệu Bản Thân 🎄</div>
+            <h1>Họ tên: Lê Quang Hiến</h1>
+            <h1>Cao: 1m65</h1>
+            <h1>Lớp: 21DTHD5</h1>
+            <h1>MSSV: 2180607487</h1>
+            <p class="description">
+                Xin chào! Tôi là sinh viên CNTT yêu thích lập trình và công
+                nghệ. Tôi luôn tìm kiếm cơ hội học hỏi và phát triển kỹ năng của
+                mình. Chúc bạn một mùa Giáng Sinh an lành! 🎅
+            </p>
+            <a href="mailto:lequanghien@example.com" class="contact-btn"
+                >🎁 Liên Hệ 🎁</a
+            >
+
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">🔵</a>
+                <a href="https://github.com" target="_blank">🐙</a>
+                <a href="https://linkedin.com" target="_blank">🔗</a>
+            </div>
+        </div>
+
+        <!-- Tạo hiệu ứng tuyết rơi -->
+        <script>
+            function createSnowflake() {
+                const snowflake = document.createElement("div");
+                snowflake.classList.add("snow");
+                document.body.appendChild(snowflake);
+
+                // Vị trí ngẫu nhiên trên đầu trang
+                snowflake.style.left = Math.random() * window.innerWidth + "px";
+                snowflake.style.animationDuration = Math.random() * 3 + 2 + "s";
+
+                // Xóa tuyết sau khi rơi xong
+                setTimeout(() => {
+                    snowflake.remove();
+                }, 5000);
+            }
+
+            setInterval(createSnowflake, 100);
+        </script>
     </body>
 </html>
